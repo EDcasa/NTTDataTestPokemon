@@ -67,12 +67,9 @@ export class CreateComponent implements OnInit {
   }
   
   createPokemon(pokemon:ICPokemon){
-    console.log("in createPokemon");
-    
     this._pokemonService.savePokemon(pokemon).subscribe({
       next:(pokemon:IPokemon)=>{
         this.unitTestResponse = pokemon;
-        console.log("message saved");
         this.reloadTable.emit();
       },
       error:(err:any)=>{
@@ -85,7 +82,6 @@ export class CreateComponent implements OnInit {
   editPokemon(pokemon:IPokemon){
     this._pokemonService.updatePokemonById(pokemon.id, pokemon).subscribe({
       next:(pokemon:IPokemon)=>{
-        console.log("Pokemon updated");
         this.reloadTable.emit();
       },
       error:(err:any)=>{

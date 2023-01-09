@@ -60,6 +60,13 @@ export class PokemonService {
     return this.http.delete<IResponseDeletePokemon>(`${this.baseURL} ${id}`);
   }
 
+  /**
+   * It takes an array of pokemons and a name as input, and returns an observable of the filtered
+   * pokemons
+   * @param {IPokemon[]} pokemons - IPokemon[] - The list of pokemons to search through
+   * @param {string} name - string - The name of the pokemon to search for
+   * @returns An Observable of an array of IPokemon.
+   */
   searchPokemon(pokemons: IPokemon[], name: string) {
     return of(pokemons).pipe(
       map(p => {

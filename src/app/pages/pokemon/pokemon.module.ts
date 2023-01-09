@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ListComponent } from './list/list.component';
 import { CreateComponent } from './create/create.component';
 import { HomeComponent } from './home/home.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -17,8 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    //ReactiveFormsModule,
-    //HttpClientModule,
     SharedModule
   ]
 })

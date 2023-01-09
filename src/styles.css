@@ -1,0 +1,177 @@
+.container {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+* {
+    font-family: 'Arial';
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-initial {
+    text-align: initial;
+}
+
+.icon-plus::after {
+    content: '+';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon-search {
+    padding-left: 40px !important;
+    background: url(https://static.thenounproject.com/png/101791-200.png) no-repeat left;
+    background-size: 26px;
+}
+
+.form-input {
+    width: 170px;
+    height: 25px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label {
+    padding: 15px;
+}
+
+.icon-save::after {
+    content: '\1f4be';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon-cancel::after {
+    content: 'x';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon-edit::after {
+    content: '\1F4DD';
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon-trash::after {
+    content: '\1F5D1';
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.grid {
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-right: 9%;
+}
+
+
+
+.rightcol {
+    width: calc(50% - 22px);
+    float: right;
+    padding: 10px;
+}
+
+.leftcol {
+    width: calc(50% - 22px);
+    display: inline-block;
+    padding: 10px;
+}
+
+.btn {
+    background: purple;
+    color: white;
+    text-decoration: none;
+    border: solid 1px purple;
+    width: 102px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:disabled{
+    background: rgb(94, 62, 94);
+    color: #9f9999;   
+}
+.btn:disabled .icon-save{
+    opacity: 0.4;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px 10px 0px;
+}
+
+.col {
+    flex-basis: auto;
+    flex-grow: 1;
+    max-width: 100%;
+    /* padding: 0px 15px 0px 15px; */
+}
+
+.col-md {
+    flex: 1;
+    max-width: 100%;
+    /* padding: 0px 15px 0px 15px; */
+}
+
+.text-danger {
+    display: block;
+    color: red;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.ma-15 {
+    margin: 15px;
+}
+
+.ma-l-50{
+    margin-left: 50px;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-start{
+    text-align: start;
+}
+.field{
+    display: flex;
+    text-align: end;
+}
+
+.d-flex{
+    display: flex;
+}
+.lbl-points{
+    width: 10%;
+    text-align: center;
+}
+.lbl-txt{
+    width: 10%;
+}
+/*
+* Media Query
+*/
+@media (max-width: 610px) {
+    .col-md {
+        text-align: start;
+    }
+    .text-danger{
+        margin-left: 80px;
+    }
+}

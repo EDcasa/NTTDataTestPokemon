@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4>Listado de Pokemon</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <input class="form-input icon-search" (keyup)="filteredPokemonName($event)" placeholder="Buscar" type="text">
+        </div>
+        <div class="col-md text-end">
+            <button class="btn" type="submit" (click)="showCreatePokemon()"><span class="icon-plus"></span> Nuevo</button>
+        </div>
+    </div>
+    <div class="row">
+        <pokemon-list [pokemonsList]="listPokemon" (deletePokemonE)="deletePokemon($event)" (editPokemonE)="loadInfoPokemon($event)"></pokemon-list>
+    </div>
+    <div class="row">
+        <create-pokemon (resetForm)="showCreatePokemon()"  (reloadTable)="getPokemons()" [pokemon]="editPokemonD" [stateFormPokemon]="isEditPokemon"></create-pokemon>
+    </div>
+</div>
